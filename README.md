@@ -11,6 +11,10 @@ Works for any File System
 
 ![Modular Image Creation](https://i25.servimg.com/u/f25/18/50/18/69/screen90.png)
 
+### Status bar icon light mode
+
+![Modular Image Creation](https://i25.servimg.com/u/f25/18/50/18/69/screen91.png)
+
 ### Follow every steps in the Video
                        ⟱
                        
