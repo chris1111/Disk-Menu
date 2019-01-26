@@ -1,7 +1,7 @@
 # Disk Menu
 
 ### This is for Mac computer. Also works for Hackintosh
-### Apple can not integrate menus to Unmount and mount Disk
+### Apple can not integrate menus to Unmount and Mount Disk
 - This Utility works for any internal Disk or USB external Disk, Thunderbolt Disk, SD Card Disk.
 Works for any File System
 
