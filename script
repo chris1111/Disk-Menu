@@ -1,0 +1,5 @@
+#!/bin/sh
+# Disk Menu Copyright (c) 2019 chris1111 All Rights reserved.
+apptitle="Disk Menu"
+version="1.0"
+osascript ./Scripts/main.scpt
