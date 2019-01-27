@@ -18,6 +18,6 @@ Works for any File System
 ### Follow every steps in the Video
                        ⟱
                        
-[![Modular Image Creation](https://i25.servimg.com/u/f25/18/50/18/69/og10.png)](https://youtu.be/BpBTRHob848)
+[![Modular Image Creation](https://i25.servimg.com/u/f25/18/50/18/69/video10.png)](https://youtu.be/BpBTRHob848)
 
 ### Download ➤[Disk Menu.dmg](https://github.com/chris1111/Disk-Menu/releases)
