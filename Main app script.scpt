@@ -1,7 +1,8 @@
 # Disk Menu
 # Copyright (c) 2019, chris1111 All Rights reserved
-
-set diskName to "DISK"
+# Set the Name         ⬇︎
+#                              ⬇︎		
+set diskName to "DISK" -- volume names
 tell current application
 	set device to (do shell script "diskutil list | grep \"" & diskName & "\" | awk '{ print substr($0,69,9) }'")
 	if device = "" then
@@ -16,24 +17,30 @@ end tell
 
 tell application "Finder"
 	if disk diskName exists then
-		tell current application
-			repeat with i from 1 to number of items in foundDisks
-				set this_item to item i of foundDisks
-				if this_item contains "disk" then
-					do shell script "diskutil unmount /dev/" & this_item
-					do shell script "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/System/Volume Unmount.aif' &> /dev/null &"
-				end if
+		# Set the Name         ⬇︎
+		#                              ⬇︎		
+		set diskName to {"DISK"} -- volume names
+		tell application "Finder"
+			repeat with foundDisks in diskName
+				do shell script "diskutil Unmount " & diskName
+				do shell script "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/System/Volume Unmount.aif' &> /dev/null &"
 			end repeat
 		end tell
+		
 	else
-		tell current application
-			repeat with i from 1 to number of items in foundDisks
-				set this_item to item i of foundDisks
-				if this_item contains "disk" then
-					do shell script "diskutil Mount /dev/" & this_item
+		tell application "Finder"
+			# Set the Name         ⬇︎
+			#                              ⬇︎
+			set diskName to {"DISK"} -- volume names
+			tell application "Finder"
+				repeat with foundDisks in diskName
+					do shell script "diskutil Mount " & diskName
 					do shell script "afplay '/System/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/System/Volume Mount.aif' &> /dev/null &"
-				end if
-			end repeat
+				end repeat
+			end tell
+			
+			
+			
 		end tell
 	end if
 end tell
