@@ -27,6 +27,6 @@ tell application "System Events"
 		{path:"/Applications/Disk Menu.app"}
 	
 end tell
-set theFile to POSIX file "/Applications/Disk Menu.app/Contents/Resources/Scripts/main.scpt"
+set theFile to POSIX file "/Applications/Disk Menu.app"
 tell application "Finder" to open theFile
 do shell script "open -a '/Applications/Disk Menu.app'"
