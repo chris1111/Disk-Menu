@@ -18,7 +18,7 @@ Works for any File System
 ### Follow every steps in the Video ⟱
 
 - Update 30 Sept 2020 adapt for Big Sur 11 ➡︎ See image bellow new script, you have to edit the name of your disk in 3 place.
-
+⟱
 ![Screen Shot ](https://user-images.githubusercontent.com/6248794/94745307-6ad7fa80-0348-11eb-8b5f-56d30e9d9b42.png)
 
                        
